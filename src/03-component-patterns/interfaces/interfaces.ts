@@ -1,9 +1,5 @@
-import { ReactElement } from 'react'
+import { Props as ProductCardProps } from '../components/ProductCard'
 
-export interface ProductCardProps {
-  children?: ReactElement | ReactElement[]
-  product: Product
-}
 export interface Product {
   id: string
   title: string
