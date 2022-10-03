@@ -9,8 +9,8 @@ const { Provider } = ProductContext
 
 export interface Props {
   children?: ReactElement | ReactElement[]
-  product: Product
   className?: string
+  product: Product
 }
 
 export const ProductCard = ({ children, product, className }: Props) => {
