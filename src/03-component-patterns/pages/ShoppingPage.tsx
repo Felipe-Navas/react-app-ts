@@ -8,24 +8,6 @@ import { Product } from '../interfaces/interfaces'
 import '../styles/custom-styles.css'
 import { useState } from 'react'
 
-const product1 = {
-  id: '1',
-  title: 'Coffe Mug - Card',
-  img: './coffee-mug.png',
-}
-
-const product2 = {
-  id: '2',
-  title: 'Coffe Mug - Meme',
-  img: './coffee-mug2.png',
-}
-
-const products: Product[] = [product1, product2]
-
-interface ProductInCart extends Product {
-  count: number
-}
-
 export const ShoppingPage = () => {
   const [shoppingCart, setShoppingCart] = useState<{
     [key: string]: ProductInCart
@@ -39,16 +21,34 @@ export const ShoppingPage = () => {
     product: Product
   }) => {
     setShoppingCart((oldShoppingCart) => {
-      if (count === 0) {
-        const { [product.id]: toDelete, ...rest } = oldShoppingCart
-
-        return rest
+      const productInCart: ProductInCart = oldShoppingCart[product.id] || {
+        ...product,
+        count: 0,
       }
 
-      return {
-        ...oldShoppingCart,
-        [product.id]: { ...product, count },
+      if (Math.max(productInCart.count + count, 0) > 0) {
+        productInCart.count += count
+        return {
+          ...oldShoppingCart,
+          [product.id]: productInCart,
+        }
       }
+
+      // Delete the product from the cart
+      const { [product.id]: toDelete, ...rest } = oldShoppingCart
+      return rest
+
+      // Old implementation:
+      // if (count === 0) {
+      // const { [product.id]: toDelete, ...rest } = oldShoppingCart
+
+      // return rest
+      // }
+
+      // return {
+      //   ...oldShoppingCart,
+      //   [product.id]: { ...product, count },
+      // }
     })
   }
 
@@ -111,6 +111,7 @@ export const ShoppingPage = () => {
             product={product}
             className="bg-dark text-white"
             onChange={onProductCountChange}
+            value={shoppingCart[product.id]?.count || 0}
           >
             <ProductImage
               className="custom-image"
@@ -133,6 +134,8 @@ export const ShoppingPage = () => {
             style={{
               width: '100px',
             }}
+            value={product.count}
+            onChange={onProductCountChange}
           >
             <ProductImage
               className="custom-image"
