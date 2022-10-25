@@ -43,5 +43,6 @@ export const useProduct = ({
   return {
     counter,
     increaseBy,
+    maxCount: initialValues?.maxCount
   }
 }

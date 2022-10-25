@@ -32,7 +32,7 @@ export const ProductCard = ({
   style,
   value,
 }: Props) => {
-  const { counter, increaseBy } = useProduct({
+  const { counter, increaseBy, maxCount } = useProduct({
     onChange,
     product,
     value,
@@ -44,6 +44,7 @@ export const ProductCard = ({
       value={{
         counter,
         increaseBy,
+        maxCount,
         product,
       }}
     >
