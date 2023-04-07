@@ -44,7 +44,7 @@ export const Navigation = () => {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/formik-basic" element={<FormikBasicPage />} />
           <Route path="/users" element={<h1>Users Page</h1>} />
-          <Route path="/*" element={<Navigate to="/home" replace />} />
+          {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}
         </Routes>
       </div>
     </BrowserRouter>
