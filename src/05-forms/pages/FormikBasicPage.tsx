@@ -74,7 +74,7 @@ export const FormikBasicPage = () => {
         {touched.lastName && errors.lastName && <span>{errors.lastName}</span>}
         <br />
 
-        <label htmlFor="email">Email Addres</label>
+        <label htmlFor="email">Email Address</label>
         <input
           type="email"
           name="email"

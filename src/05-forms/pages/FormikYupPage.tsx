@@ -40,7 +40,7 @@ export const FormikYupPage = () => {
         {touched.lastName && errors.lastName && <span>{errors.lastName}</span>}
         <br />
 
-        <label htmlFor="email">Email Addres</label>
+        <label htmlFor="email">Email Address</label>
         <input type="email" {...getFieldProps('email')} />
         {touched.email && errors.email && <span>{errors.email}</span>}
         <br />
