@@ -1,53 +1,54 @@
-# README
+# React App Ts
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A Basic structure for a React App in Typescript
 
-### What is this repository for?
+## Description
 
-- Quick summary
-  - A Basic structure for a React App in Typescript
-- Version: 1.0
-- [Author](https://www.linkedin.com/in/felipenavaslederhos)
+In this app I have different examples of forms and some uses of react hooks
 
-### How do I get set up?
+## Getting Started
 
-- Summary of set up
+### Dependencies
 
-  - `yarn`
-  - `npm install`
+- `npm`
+- `node`
 
-- How to run the app?
+### Installing
 
-  - `yarn start`
-  - `npm start`
+- Clone the repository and install dependencies:
 
-- How to run the tests?
+```
+git clone https://github.com/Felipe-Navas/react-app-ts.git && cd react-app-ts && npm install
+```
 
-  - `yarn test`
-  - `npm test`
+### Executing program
 
-- Dependencies
-    - "@testing-library/jest-dom": "^5.16.5",
-    - "@testing-library/react": "^13.3.0",
-    - "@testing-library/user-event": "^13.5.0",
-    - "@types/jest": "^27.5.2",
-    - "@types/node": "^16.11.53",
-    - "@types/react": "^18.0.17",
-    - "@types/react-dom": "^18.0.6",
-    - "react": "^18.2.0",
-    - "react-dom": "^18.2.0",
-    - "react-router-dom": "^6.3.0",
-    - "react-scripts": "5.0.1",
-    - "typescript": "^4.7.4",
-    - "web-vitals": "^2.1.4"
+```
+npm start
+```
 
-### Contribution guidelines
+Preview of the main screen:
 
-- Writing tests
-- Code review
-- Other guidelines
+<img width="350" src="assets/MainScreen.png" alt="Preview of the main screen" />
 
-### Who do I talk to?
+### Running tests
 
-- Repo owner or admin
-- Other community or team contact
+```
+npm test
+```
+
+## Authors
+
+- [Felipe Navas](https://www.linkedin.com/in/felipenavaslederhos) - [Email](mailto:felipenavas.itec@gmail.com?subject=[GitHub]%react-app-ts)
+
+## Contributing
+
+1. Fork it (<https://github.com/Felipe-Navas/react-app-ts/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the [MIT License] - see the LICENSE file for details

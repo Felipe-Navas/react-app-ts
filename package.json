@@ -1,7 +1,18 @@
 {
   "name": "react-app-ts",
   "version": "1.0.0",
-  "private": true,
+  "description": "In this app I have different examples of forms and some uses of react hooks",
+  "main": "/src/index.tsx",
+  "author": "Felipe Navas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe-Navas/react-app-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Felipe-Navas/react-app-ts/issues"
+  },
+  "homepage": "https://github.com/Felipe-Navas/react-app-ts#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
