@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/Felipe-Navas/react-app-ts/issues"
   },
-  "homepage": "https://github.com/Felipe-Navas/react-app-ts#readme",
+  "homepage": "https://Felipe-Navas.github.io/react-app-ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
